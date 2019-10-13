@@ -9,4 +9,5 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-styled-components',
   ],
+  pathPrefix: '/reponame',
 };
