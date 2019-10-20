@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { Heading2, Heading3 } from '../../styled/headings';
+
 const schedule = {
   "Friday 1/10": [{
     event: "Attendee Check-in",
@@ -14,6 +16,26 @@ const schedule = {
     event: "Opening Ceremony",
     location: "Spanos Theater",
     time: "6:00pm"
+  }, {
+    event: "Hacking Begins",
+    location: "MAC",
+    time: "7:30pm"
+  }, {
+    event: "Workshop 1",
+    location: "Phillips Hall",
+    time: "8:30pm"
+  }, {
+    event: "Workshop 2",
+    location: "Phillips Hall",
+    time: "9:30pm"
+  }, {
+    event: "Workshop 3",
+    location: "Phillips Hall",
+    time: "10:30pm"
+  }, {
+    event: "Late Night Snack",
+    location: "MAC",
+    time: "12:00am"
   }],
   "Saturday 1/11": [{
     event: "Breakfast",
@@ -25,9 +47,6 @@ const schedule = {
     location: "MAC",
     time: "8:00am"
   }]
-// Dinner MAC
-// Opening Ceremony Spanos Theater
-// Hacking Begins MAC Workshop 1 Phillips Hall Workshop 2 Phillips Hall Workshop 3 Phillips Hall Late Night Snack MAC
 }
 
 export const ScheduleSection = () => (
@@ -35,26 +54,18 @@ export const ScheduleSection = () => (
     <Heading2>Schedule</Heading2>
     <Schedule>
       {Object.entries(schedule).map(([day, events]) => (
-        <div>
-          <Heading3>{day}</Heading3>
-          {events.map(Event)}
-        </div>
+        <ScheduleDay day={day} events={events} />
       ))}
     </Schedule>
   </ScheduleSectionStyle>
 );
 
-const Heading2 = styled.h2`
-  font-size: 2em;
-  font-weight: 900;
-  margin-bottom: 1.5rem;
-`;
-
-const Heading3 = styled.h3`
-  font-size: 1.43em;
-  font-weight: 900;
-  margin-bottom: 1rem;
-`;
+const ScheduleDay = ({day, events}) => (
+  <div>
+    <Heading3>{day}</Heading3>
+    {events.map(Event)}
+  </div>
+);
 
 const Event = (({event, location, time}) => (
   <EventStyleWrapper>
@@ -69,14 +80,13 @@ const Event = (({event, location, time}) => (
 ));
 
 const ScheduleSectionStyle = styled.section`
-  display: flex;
-  flex-direction: column;
+
 `;
 
 const Schedule = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  grid-gap: 3rem;
+  grid-gap: 2rem;
 `;
 
 /*const Schedule = styled.div`
