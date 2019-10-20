@@ -1,14 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { ScheduleSection } from '../components/sections/schedule/Schedule';
+import { FAQSection } from '../components/sections/faq/FAQ';
+
 const IndexPage = () => (
   <WrapperContainer>
-    <h1>Hello World</h1>
+    <ScheduleSection />
+    <FAQSection />
   </WrapperContainer>
 );
 
 const WrapperContainer = styled.div`
-  color: red;
+
 `;
 
 export default IndexPage;

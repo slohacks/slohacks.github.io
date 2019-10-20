@@ -1,0 +1,9 @@
+@import 'https://fonts.googleapis.com/css?family=Proxima+Nova:300,400,500,600,900';
+
+* {
+  margin: 0;
+}
+:root {
+  font-family: "Proxima Nova", sans-serif;
+  color: #2A34B1;
+}
