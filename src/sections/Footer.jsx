@@ -7,7 +7,6 @@ const Footer = () => (
   </FooterContainer>
 );
 
-
 const FooterContainer = styled.div`
 
 `;

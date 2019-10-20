@@ -7,7 +7,6 @@ const AboutUs = () => (
   </AboutUsContainer>
 );
 
-
 const AboutUsContainer = styled.div`
 
 `;
