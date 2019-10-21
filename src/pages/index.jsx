@@ -1,9 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { AboutUs, Footer } from '../sections';
+
 const IndexPage = () => (
   <WrapperContainer>
-    <h1>Hello World</h1>
+    <Footer />
+    <AboutUs />
   </WrapperContainer>
 );
 
