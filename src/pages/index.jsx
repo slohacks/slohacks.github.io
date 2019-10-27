@@ -11,7 +11,7 @@ import {
 } from '../sections';
 
 import {
-  pattern4
+  pattern4,
 } from '../images';
 
 const IndexPage = () => (

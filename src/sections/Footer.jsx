@@ -10,8 +10,6 @@ import {
   MainPattern,
 } from '../images';
 
-import Accordion from '../components/Accordion';
-
 const Footer = () => (
   <FooterContainer>
     <SocialContainer>

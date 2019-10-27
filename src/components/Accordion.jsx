@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Proptypes from 'prop-types';
 import styled from 'styled-components';
 
 const Accordion = ({ question, answer }) => {
@@ -45,5 +46,10 @@ const AccordionContent = styled.div`
   overflow: hidden;
   transition: opacity .25s cubic-bezier(.68,.8,.25,1) .1s,max-height .25s cubic-bezier(.22,.61,.36,1),padding-bottom .25s cubic-bezier(.22,.61,.36,1);
 `;
+
+Accordion.propTypes = {
+  question: Proptypes.string.isRequired,
+  answer: Proptypes.string.isRequired,
+};
 
 export default Accordion;

@@ -13,7 +13,7 @@ const faq = [
   { title: 'How much does it cost?', content: 'Food and admission are absolutely FREE! Buses will be provided for students traveling within California.' },
   { title: 'Is there a code of conduct?', content: 'Please refer to the MLH code of conduct.' },
   { title: 'How will I get there?', content: 'We will be providing buses for Californian hackers, and case-by-case flight reimbursements for out-of-state hackers. Check your email upon acceptance for more details!' },
-  { title: 'Still have questions?', content: 'Feel free to shoot us an email at team@slohacks.com or contact us on Facebook.' }
+  { title: 'Still have questions?', content: 'Feel free to shoot us an email at team@slohacks.com or contact us on Facebook.' },
 ];
 
 const FAQ = () => (
