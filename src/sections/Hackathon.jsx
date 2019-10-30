@@ -27,7 +27,7 @@ const Hackathon = () => (
 
 const HackathonContainer = styled.div`
   margin: 0 auto;
-  padding: 2rem;
+  padding: 4rem 2rem 2rem 2rem;
   max-width: 1250px;
 `;
 

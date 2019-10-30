@@ -1,3 +1,4 @@
+import Hero from './Hero';
 import AboutUs from './AboutUs';
 import Footer from './Footer';
 import Tracks from './Tracks';
@@ -7,6 +8,7 @@ import Schedule from './Schedule';
 
 
 export {
+  Hero,
   Hackathon,
   AboutUs,
   Footer,

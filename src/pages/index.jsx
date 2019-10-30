@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import {
+  Hero,
   Hackathon,
   Tracks,
   AboutUs,
@@ -16,6 +17,7 @@ import {
 
 const IndexPage = () => (
   <WrapperContainer>
+    <Hero />
     <Hackathon />
     <Tracks />
     <AboutUs />

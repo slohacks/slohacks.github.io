@@ -22,7 +22,7 @@ const Footer = () => (
     <p>
       Made with ♥ by the SLO Hacks Team
       <br />
-      &copy; SLO Hacks 2018
+      &copy; SLO Hacks 2019
     </p>
   </FooterContainer>
 );
