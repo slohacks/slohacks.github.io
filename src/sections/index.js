@@ -4,6 +4,7 @@ import Footer from './Footer';
 import Tracks from './Tracks';
 import Hackathon from './Hackathon';
 import FAQ from './FAQ';
+import Sponsors from './Sponsors';
 import Schedule from './Schedule';
 
 
@@ -14,5 +15,6 @@ export {
   Footer,
   Tracks,
   Schedule,
+  Sponsors,
   FAQ,
 };

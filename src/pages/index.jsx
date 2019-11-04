@@ -7,6 +7,7 @@ import {
   Tracks,
   AboutUs,
   Schedule,
+  Sponsors,
   FAQ,
   Footer,
 } from '../sections';
@@ -25,6 +26,7 @@ const IndexPage = () => (
       <Schedule />
     </ScheduleWrapper>
     <FAQ />
+    <Sponsors />
     <Footer />
   </WrapperContainer>
 );
