@@ -9,5 +9,5 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-styled-components',
   ],
-  pathPrefix: '/reponame',
+  pathPrefix: '/2020.slohacks.github.io',
 };
