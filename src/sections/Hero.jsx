@@ -54,7 +54,10 @@ const LogoContainer = styled.div`
 const BackgroundWrapper = styled.div`
   display: flex;
   
-  background-image: linear-gradient(to right, #E5975E , #2A34B1);
+  background: url(${FrontHero}), url(${BackHero}), linear-gradient(to right, #E5975E , #2A34B1);
+  background-size: 80%, 80%, 100%;
+  background-position: center;
+  background-repeat: no-repeat;
   @media screen and (min-width: 767px) {
     justify-content: center;
   }
@@ -86,10 +89,7 @@ const HeroContent = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url(${FrontHero}), url(${BackHero});
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  
 
   p {
     font-size: 14px;
